@@ -1,0 +1,210 @@
+{
+  "info": {
+    "_postman_id": "ecc30863-0124-4c2d-89c2-15fd48497c26",
+    "name": "Viaggi",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52233338",
+    "_collection_link": "https://go.postman.co/collection/52233338-ecc30863-0124-4c2d-89c2-15fd48497c26?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crea viaggio",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"destinazione\": \"Roma\",\r\n    \"data\": \"2026-03-15\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/viaggi",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "viaggi"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crea dipendente",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"username\": \"mrossi\",\r\n    \"nome\": \"Mario\",\r\n    \"cognome\": \"Rossi\",\r\n    \"email\": \"mario.rossi@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/dipendenti",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dipendenti"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crea prenotazione",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"viaggioId\": 1,\r\n    \"dipendenteId\": 1,\r\n    \"dataDiRichiesta\": \"2026-03-15\",\r\n    \"notePreferenze\": \"Preferenza posto finestrino\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/prenotazioni",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "prenotazioni"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crea prenotazione",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"viaggioId\": 1,\r\n    \"dipendenteId\": 1,\r\n    \"dataDiRichiesta\": \"2026-03-15\",\r\n    \"notePreferenze\": \"Preferenza posto finestrino\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/prenotazioni",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "prenotazioni"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Cambia stato viaggio",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/viaggi/1/stato?stato=true",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "viaggi",
+            "1",
+            "stato"
+          ],
+          "query": [
+            {
+              "key": "stato",
+              "value": "true"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Upload immagine dipendente",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "immagine",
+              "type": "file",
+              "uuid": "5d6f0d9f-cf48-4e7f-93cd-c8a78f985a78",
+              "src": "/C:/Users/fdeia/Desktop/istockphoto-1495088043-612x612.jpg"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:8080/dipendenti/1/immagine",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "dipendenti",
+            "1",
+            "immagine"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Nuovo viaggio",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"data\": \"2026-03-15\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/viaggi",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "viaggi"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
